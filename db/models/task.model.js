@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const TaskSchema = new mongoose.Schema({
-    title : {
+    title: {
         type: String,
         required: true,
         minlength: 1,
@@ -9,10 +9,14 @@ const TaskSchema = new mongoose.Schema({
     },
     _listId: {
         type: mongoose.Types.ObjectId,
-        requireed: true
+        required: true
+    },
+    completed: {
+        type: Boolean,
+        default: false
     }
-});
+})
 
-const Task = mongoose.model('Task',TaskSchema);
+const Task = mongoose.model('Task', TaskSchema);
 
-module.exports = { Task };
+module.exports = { Task }
