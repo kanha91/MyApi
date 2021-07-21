@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 // mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb+srv://kanha91:Kanha@cluster0.8jevm.mongodb.net/Todo?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://kanha91:Kanha@cluster0.gmiue.mongodb.net/Kanha?retryWrites=true&w=majority',
 {useNewUrlParser: true , useUnifiedTopology: true }).then( () => {
     console.log('Connected To Mongoose SuccessFully');
 }).catch( (e) => {
