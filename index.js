@@ -8,7 +8,9 @@ const bodyParser = require('body-parser');
 // Load in the mongoose models
 const { List, Task, User } = require('./db/models');
 
+
 const jwt = require('jsonwebtoken');
+
 
 
 /* MIDDLEWARE  */
@@ -385,8 +387,9 @@ let deleteTasksFromList = (_listId) => {
 
 
 
+port = 4050;
 
-app.listen(4050, () => {
-    console.log("Server is listening on port 4050");
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
     
 })

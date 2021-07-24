@@ -7,6 +7,7 @@ module.exports = {
     List,
     Task,
     User
+
 }
 
 // const mongoose = require('mongoose');
@@ -32,3 +33,4 @@ module.exports = {
 // });
 
 // module.exports = mongoose.model('users', userSchema);
+

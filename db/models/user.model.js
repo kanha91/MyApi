@@ -1,3 +1,4 @@
+
 // const mongoose = require('mongoose');
 // const _ = require('lodash');
 // const jwt = require('jsonwebtoken');
@@ -200,11 +201,15 @@ const _ = require('lodash');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const bcrypt = require('bcryptjs');
+
 const { reject } = require('lodash');
 
 
 // JWT Secret
 const jwtSecret = "51778657246321226641JaiShreeRam7148924065";
+
+
+
 
 const UserSchema = new mongoose.Schema({
     email: {
@@ -380,9 +385,12 @@ let saveSessionToDatabase = (user, refreshToken) => {
 let generateRefreshTokenExpiryTime = () => {
     let daysUntilExpire = "10";
     let secondsUntilExpire = ((daysUntilExpire * 24) * 60) * 60;
+
     // let secondsUntilExpire = 15;
     return ((Date.now() / 1000) + secondsUntilExpire);
 }
+
+
 
 
 const User = mongoose.model('User', UserSchema);
