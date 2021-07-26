@@ -14,7 +14,6 @@ const jwt = require('jsonwebtoken');
 const port = process.env.PORT || 4050
 
 
-
 /* MIDDLEWARE  */
 
 // Load middleware
