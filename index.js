@@ -386,7 +386,7 @@ let deleteTasksFromList = (_listId) => {
 }
 
 
-app.use(express.static('HomeLayout'));
+// app.use(express.static('HomeLayout'));
 
 
 // port = 4050;
