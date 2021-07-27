@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+// const routes = require("./routes");
 
 const { mongoose } = require('./db/mongoose');
 
@@ -11,7 +12,9 @@ const { List, Task, User } = require('./db/models');
 
 const jwt = require('jsonwebtoken');
 
-const port = process.env.PORT || 4050
+const port = process.env.PORT || 4050;
+
+app.set("port", port);
 
 /* MIDDLEWARE  */
 
@@ -384,6 +387,9 @@ let deleteTasksFromList = (_listId) => {
         console.log("Tasks from " + _listId + " were deleted!");
     })
 }
+
+
+// app.use('/', routes);
 
 
 // app.use(express.static('HomeLayout'));
