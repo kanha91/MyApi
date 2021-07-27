@@ -11,8 +11,7 @@ const { List, Task, User } = require('./db/models');
 
 const jwt = require('jsonwebtoken');
 
-const port = process.env.PORT || 4050
-
+const port = process.env.PORT || 8080
 
 /* MIDDLEWARE  */
 
